@@ -20,4 +20,9 @@ class DataBase
         }
         return self::$_singleton;
     }
+
+    public function getConnection()
+    {
+        return $this->_connection;
+    }
 }

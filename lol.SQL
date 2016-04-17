@@ -1,7 +1,6 @@
 CREATE TABLE RecentGamesDto
 (
 	id int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	games	long NULL,
 	summonerId	long NULL
 );
 
@@ -13,7 +12,7 @@ CREATE TABLE games
 	gameId	long NULL,
 	gameMode	varchar(512) NULL,
 	gameType	varchar(512) NULL,
-	invalid	BOOLEAN NULL,
+	invalid	BOOLEAN NULL DEFAULT FALSE,
 	ipEarned	int NULL,
 	level	int NULL,
 	mapId	int NULL,
